@@ -52,7 +52,7 @@ $('footer').append('<button onclick="TogetherJS(this); return false;">Let\'s Do 
         $roomToggleDivs.insertAfter($this).wrapAll('<div class="show-hide-rooms" />');
     });
     // Checks if you're on the second page of the booking path and hides the booking area
-	if(pageHeading == "SELECT ROOMS/RATES"){$('.custom-body-left').hide();};
+	if($('.page-hed:contains("SELECT ROOMS/RATES")')){$('.custom-body-left').show();};
     //Float form elements to right side to match comps (create user page)
     $('#personal-info-fields').appendTo('section#create-account-login');
     $('#contact-info-fields').nextUntil('.account-form-sumbit').andSelf().wrapAll('<div class="custom-my-account-form-pull-left pull-left" />');
