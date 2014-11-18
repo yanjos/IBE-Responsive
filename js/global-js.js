@@ -1,6 +1,8 @@
 <script>
 /*LATEST GLOBAL*/
 $(window).load(function(){
+/*Removes Jquery ui combobox*/
+  $('select').combobox('destroy');
 /*Adds class to sign in when signed out*/
 if(!$('.welcome-message').length){
    $('.user-info').addClass('register-txt');
@@ -52,7 +54,7 @@ $('footer').append('<button onclick="TogetherJS(this); return false;">Let\'s Do 
         $roomToggleDivs.insertAfter($this).wrapAll('<div class="show-hide-rooms" />');
     });
     // Checks if you're on the second page of the booking path and hides the booking area
-	if($('.page-hed:contains("SELECT ROOMS/RATES")')){$('.custom-body-left').show();};
+	//if($('.page-hed:contains("SELECT ROOMS/RATES")')){$('.custom-body-left').hide();};
     //Float form elements to right side to match comps (create user page)
     $('#personal-info-fields').appendTo('section#create-account-login');
     $('#contact-info-fields').nextUntil('.account-form-sumbit').andSelf().wrapAll('<div class="custom-my-account-form-pull-left pull-left" />');
