@@ -1,0 +1,25 @@
+#no-results-messaging .message-dotted {
+    display:block!important;
+}
+.custom-header {
+    height:120px!important;
+}
+.booking-path label.required:after {
+    content:'*'
+}
+.rates-packages .room-descr .custom-room-desc {
+    top:-50px!important;
+}
+.confirmation-page ul {
+    padding:5px 10px;
+    margin:0!important;
+}
+#head-nav {
+    display:none;
+}
+.webkit select {
+    background: #fff url(//imageserver.microswebhotel.com/dollywood/get/w/21/h/15/dd-arrow-brown.jpg?) right center no-repeat !important;
+    height: 15px !important;
+    margin-right: 6px;
+    padding-right: 25px !important;
+}
