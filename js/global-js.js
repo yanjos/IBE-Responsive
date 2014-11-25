@@ -3,6 +3,8 @@
 $(document).ready(function(){
   /*Removes Jquery ui combobox*/
   /*$('select:not(#reg-state)').combobox('destroy');*/
+  /*Makes Grand Total dollar amount bold*/
+  $('#ui-resv-grandtotalamount').closest('p').css('font-weight','bold');
 });
 $(window).load(function(){
 /*Adds class to sign in when signed out*/
