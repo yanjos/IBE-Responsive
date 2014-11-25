@@ -1,8 +1,10 @@
 <script>
 /*LATEST GLOBAL*/
+$(document).ready(function(){
+  /*Removes Jquery ui combobox*/
+  /*$('select:not(#reg-state)').combobox('destroy');*/
+});
 $(window).load(function(){
-/*Removes Jquery ui combobox*/
-  $('select').combobox('destroy');
 /*Adds class to sign in when signed out*/
 if(!$('.welcome-message').length){
    $('.user-info').addClass('register-txt');
